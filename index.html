@@ -16,10 +16,19 @@
     <section class="container block-domain">
       <h3 class="post__purpose">Search using postcode</h3>
       <div class="input-group">
-        <input type="text" class="input" placeholder="Enter postcode here" />
-        <button class="btn btn--accent">Search</button>
+        <input
+          id="postcode"
+          type="text"
+          class="input"
+          placeholder="Enter postcode here"
+        />
+        <button class="btn btn--accent" onclick="fetchRestaurant()">
+          Search
+        </button>
       </div>
     </section>
+    <script src="./src/main.js"></script>
+
     <div class="container grid">
       <div class="plan plan--restaurant grid-item">
         <div class="card">
