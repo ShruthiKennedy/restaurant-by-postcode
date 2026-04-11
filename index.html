@@ -22,28 +22,11 @@
           class="input"
           placeholder="Enter postcode here"
         />
-        <button class="btn btn--accent" onclick="fetchRestaurant()">
-          Search
-        </button>
+        <button id="searchBtn" class="btn btn--accent">Search</button>
       </div>
     </section>
-    <script src="./src/main.js"></script>
 
-    <div class="container grid">
-      <div class="plan plan--restaurant grid-item">
-        <div class="card">
-          <header class="card__header">
-            <h3 class="plan__name">Dominos</h3>
-          </header>
-          <div class="card__body">
-            <ul class="list">
-              <li class="list__item">4.2</li>
-              <li class="list__item">Pizza</li>
-              <li class="list__item">Amstelveen</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="cardsContainer" class="container grid"></div>
   </body>
+  <script type="module" src="./src/main.js"></script>
 </html>

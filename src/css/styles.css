@@ -29,6 +29,7 @@ body{
 .post__title {
    margin-top: 0;
    margin-bottom: 0;
+   
 }
 .post__purpose {
    text-align: center;
@@ -41,6 +42,7 @@ body{
     margin-bottom: 0px;
     padding:0.5rem;
     text-align: center;
+    font-weight: 500;
 }
 /* Input Group */
     .block-domain .input-group{
@@ -106,9 +108,14 @@ body{
     }
     .card__header{
         background-color: var(--color-primary);
+        display: flex;
         color: var(--color-text);
         padding: 0.5rem;
         border-radius: 15px;
+        min-height: 160px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     .list{
         margin: 10px;
@@ -123,7 +130,8 @@ body{
   grid-template-rows: repeat(2,1fr);
   gap: 10px;
   padding: 2rem;
-  align-items: center;
+  align-items: stretch;
+  margin-top: 5rem;
 }
 .grid-item{
     background-color:var(--color-text);
