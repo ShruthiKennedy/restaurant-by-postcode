@@ -10,7 +10,7 @@
   <body>
     <div class="post">
       <header class="post__header">
-        <h2 class="post__title">Title</h2>
+        <h2 class="post__title">At your Doorstep</h2>
       </header>
     </div>
     <section class="container block-domain">
@@ -24,9 +24,13 @@
         />
         <button id="searchBtn" class="btn btn--accent">Search</button>
       </div>
+      <p id="error" class="error"></p>
     </section>
 
     <div id="cardsContainer" class="container grid"></div>
+    <div id="loading" class="loading" style="display: none">
+      <p class="loading__text">Finding restaurants...</p>
+    </div>
   </body>
   <script type="module" src="./src/main.js"></script>
 </html>

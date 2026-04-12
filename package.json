@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-by-postcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShruthiKennedy/restaurant-by-postcode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ShruthiKennedy/restaurant-by-postcode/issues"
+  },
+  "homepage": "https://github.com/ShruthiKennedy/restaurant-by-postcode#readme",
+  "devDependencies": {
+    "vite": "^8.0.8",
+    "vitest": "^4.1.4"
+  }
+}
+
