@@ -1,28 +1,40 @@
-import { transform } from "./transform.js";
-import { render } from "./render.js";
-import { showLoading, validatePostcode, hideLoading, validateResponse } from "./utils.js";
+import { transform } from './transform.js';
+import { render } from './render.js';
+import {
+  showLoading,
+  validatePostcode,
+  hideLoading,
+  validateResponse,
+} from './utils.js';
 
-const API_BASE = "/api/discovery/uk/restaurants/enriched/bypostcode/";
+const API_BASE = '/api/discovery/uk/restaurants/enriched/bypostcode/';
 
 export async function fetchRestaurant() {
-    document.getElementById("cardsContainer").innerHTML="";
-    const postcode = document.getElementById("postcode").value.trim().toLowerCase();
+  document.getElementById('cardsContainer').innerHTML = '';
 
-    if (!validatePostcode(postcode)) return; 
-    showLoading();
+  const postcode = document
+    .getElementById('postcode')
+    .value.trim()
+    .toLowerCase();
 
-    try {
-        let postcode=document.getElementById("postcode").value;
-        const response = await fetch(`${API_BASE}${postcode}`);
-        const data = await response.json();
-        validateResponse(data);
-    
-        render(transform(data));
+  if (!validatePostcode(postcode)) return;
 
-    } catch (error) {
-        console.log("Something went wrong" + error);
-    } finally {
-        hideLoading();
-    }
+  showLoading();
+
+  try {
+    const response = await fetch(`${API_BASE}${postcode}`);
+    const data = await response.json();
+
+    if (!validateResponse(data)) return;
+
+    render(transform(data));
+  } catch (error) {
+    document.getElementById('error').textContent =
+      'Something went wrong. Please try again.';
+    console.log('Something went wrong', error);
+  } finally {
+    hideLoading();
+  }
 }
-document.getElementById("searchBtn").addEventListener("click", fetchRestaurant);
+
+document.getElementById('searchBtn').addEventListener('click', fetchRestaurant);

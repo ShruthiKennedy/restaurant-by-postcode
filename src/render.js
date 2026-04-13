@@ -1,6 +1,8 @@
-export function render(restaurants){
-    document.getElementById("cardsContainer").innerHTML =restaurants.map(restaurant => (
-    `<div class="plan plan--restaurant grid-item">
+export function render(restaurants) {
+  document.getElementById('cardsContainer').innerHTML = restaurants
+    .map(
+      (restaurant) =>
+        `<div class="plan plan--restaurant grid-item">
     <div class="card">
         <div class="card__body">
             <ul class="list">
@@ -12,5 +14,6 @@ export function render(restaurants){
         </div>
     </div>
     </div>`
-    )).join(""); 
+    )
+    .join('');
 }
