@@ -26,8 +26,10 @@ export function validateResponse(data) {
   ) {
     document.getElementById('error').textContent =
       'No restaurants found for this postcode.';
-    return;
+    return false;
   }
+  document.getElementById('error').textContent = '';
+  return true;
 }
 
 export function showLoading() {
