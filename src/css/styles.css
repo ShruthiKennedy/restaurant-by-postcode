@@ -39,7 +39,7 @@ body{
    color: var(--color-button);
    margin:10px 0 0 0;
 }
-.plan__name{
+.card__name{
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom:0.5rem;
@@ -115,7 +115,7 @@ body{
 }
 
 /* Cards */
-.plan--restaurant{
+.card--restaurant{
         max-width: 250PX;
         border-radius: var(--border-radius);
     }

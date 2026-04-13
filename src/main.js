@@ -9,7 +9,7 @@ import {
 
 const API_BASE = '/api/discovery/uk/restaurants/enriched/bypostcode/';
 
-export async function fetchRestaurant() {
+export async function fetchRestaurants() {
   document.getElementById('cardsContainer').innerHTML = '';
 
   const postcode = document
@@ -37,4 +37,6 @@ export async function fetchRestaurant() {
   }
 }
 
-document.getElementById('searchBtn').addEventListener('click', fetchRestaurant);
+document
+  .getElementById('searchBtn')
+  .addEventListener('click', fetchRestaurants);
