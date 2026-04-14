@@ -33,6 +33,8 @@ Final page should look like below
 
 ## Preview
 
+![Restaurant by Postcode](./screenshot.png)
+
 ---
 
 ## Assumptions
