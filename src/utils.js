@@ -6,11 +6,11 @@ export function validatePostcode(postcode) {
     return false;
   }
 
-  const ukPostcode = /^(E|EC|N|NW|SE|SW|W|WC)\d/i;
+  const ukPostcode =
+    /^(GIR\s?0AA|([A-Za-z][0-9]{1,2}|[A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2}|[A-Za-z][0-9][A-Za-z]|[A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z])\s?[0-9][A-Za-z]{2})$/i;
 
   if (!ukPostcode.test(postcode)) {
-    errorMsg.textContent =
-      'Please enter a valid UK postcode e.g. E1, SW1A, WC2N.';
+    errorMsg.textContent = 'Please enter a valid UK postcode.';
     return false;
   }
 
