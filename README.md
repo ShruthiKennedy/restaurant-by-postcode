@@ -59,4 +59,3 @@ Final page should look like below
 ## Challenges Faced
 
 - The Just Eat API does not allow direct browser request due to CORS restrictions. To tacle this I used Vite proxy server.
--
