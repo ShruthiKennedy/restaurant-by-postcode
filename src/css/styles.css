@@ -150,7 +150,7 @@ body{
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2,1fr);
   column-gap:0 0 15px 0;
-  row-gap: 50px;
+  row-gap: 30px;
   padding: 0;
   align-items: stretch;
   margin-top: 5rem;
