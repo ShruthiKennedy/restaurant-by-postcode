@@ -49,7 +49,14 @@ Final page should look like below
 ## Improvements I Would Make
 
 - Add sorting and filtering so users can filter by rating, location or cuisine.
-- Improve error handling — distinguish between network errors, empty results and invalid postcodes more clearly.
-- Broaden postcode validation to handle all UK postcodes, not just London.
+- Add pagination or infinite scroll to show more records and allow the user to search.
+- Cache already fetched data for postcodes to avoid making muliple network calls for the same postcode.
+- Add toast to show errors in the application.
+- Use libraries or typescript to validate response JSON schema.
 - Add loading skeleton cards instead of a plain text loading message.
 - Make the UI responsive for different screen sizes.
+
+## Challenges Faced
+
+- The Just Eat API does not allow direct browser request due to CORS restrictions. To tacle this I used Vite proxy server.
+-
