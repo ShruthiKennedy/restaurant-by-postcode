@@ -177,3 +177,9 @@ body {
   margin-top: 4px;
   text-align: center;
 }
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
