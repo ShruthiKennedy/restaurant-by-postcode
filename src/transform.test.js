@@ -41,15 +41,15 @@ describe('transform', () => {
 
     expect(result[0]).toEqual({
       name: 'Bagelbuzz',
-      cuisines: ['Bagels', 'Lunch'],
+      cuisines: 'Bagels, Lunch',
       rating: 5,
       address: '195 Shoreditch High Street, London, E1 6LG',
     });
   });
 
-  it('extracts only cuisine names, not the full cuisine objects', () => {
+  it('extracts only cuisine names as a comma separated string', () => {
     const result = transform(mockData);
-    expect(result[0].cuisines).toEqual(['Bagels', 'Lunch']);
+    expect(result[0].cuisines).toBe('Bagels, Lunch');
   });
 
   it('extracts the starRating as a number', () => {
