@@ -1,7 +1,7 @@
 {
   "name": "restaurant-by-postcode",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web application that finds restaurants with a UK postcode using the Just Eat API.",
   "type": "module",
   "scripts": {
     "dev": "vite",
