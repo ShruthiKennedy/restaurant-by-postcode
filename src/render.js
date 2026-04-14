@@ -2,7 +2,7 @@ export function render(restaurants) {
   document.getElementById('cardsContainer').innerHTML = restaurants
     .map(
       (restaurant) =>
-        `<div class=" card--restaurant grid-item">
+        `<div class="card--restaurant grid-item">
     <div class="card">
         <div class="card__body">
             <ul class="list">
